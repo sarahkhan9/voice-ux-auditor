@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const CALL_TYPES = ["Inbound Support", "Outbound Sales", "Appointment Scheduling", "Lead Qualification", "Collections / Billing", "Other"];
 
@@ -391,6 +392,7 @@ export default function VoiceUXAuditor() {
           Built by Sarah Khan · sarahkhan.co
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
